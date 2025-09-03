@@ -1,0 +1,10 @@
+size(640, 480);
+background(255, 255, 255);
+textSize(25);
+
+fill(245, 225, 0);
+text("Luca ", 25, 20);
+fill(255, 0, 0);
+text("de ", 80, 20);
+fill(50, 0, 255);
+text("Bruin", 110 , 20);
