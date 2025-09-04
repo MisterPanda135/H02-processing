@@ -106,3 +106,16 @@ else {
 println("hier wil ik zijn");
 }
 }
+
+1.11
+
+int steen1 = (int) (Math.random() * 6)+ 1;
+int steen2 = (int) (Math.random() * 6)+ 1;
+int steen3 = (int) (Math.random() * 6)+ 1;
+
+
+if(steen1 == 1 || steen2 == 1 || steen3 == 1){
+  println("mis!");
+}else{
+  println(((steen1 + steen2 + steen3) / 3) + " Schade HIT!");
+}
