@@ -119,3 +119,25 @@ if(steen1 == 1 || steen2 == 1 || steen3 == 1){
 }else{
   println(((steen1 + steen2 + steen3) / 3) + " Schade HIT!");
 }
+
+1.11.1
+
+int steen1 =(int) (Math.random() * 6)+ 1;
+int steen2 =(int) (Math.random() * 6)+ 1;
+int steen3 =(int) (Math.random() * 6)+ 1;
+
+println(steen1 + " " + steen2 + " " + steen3);
+
+if(steen1 == 1 || steen2 == 1 || steen3 == 1){
+  if(steen1 == 1 && steen2 == 1 && steen3 == 1){
+    println("Critical MISS!");
+  }else{
+    println("mis!");
+  }
+}else{
+  if(steen1 == 6 && steen2 == 6 && steen3 == 6){
+    println("12 Schade Critical HIT!");
+  }else{
+    println(((steen1 + steen2 + steen3) / 3) + " Schade. HIT!");
+  }
+}
