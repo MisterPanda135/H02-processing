@@ -141,3 +141,34 @@ if(steen1 == 1 || steen2 == 1 || steen3 == 1){
     println(((steen1 + steen2 + steen3) / 3) + " Schade. HIT!");
   }
 }
+
+1.12
+
+float cijfer = 7;
+float alessen = 17;
+float totaallessen = 20;
+boolean geslaagd = false;
+float procent;
+
+procent = alessen * 100 / 20;
+if(procent >= 80 && cijfer >= 5.5){
+  println("Geslaagd!");
+}else{
+  println("Gezakt. :(");
+}
+
+1.12.1
+
+float cijfer = 5.5;
+float alessen = 16;
+float totaallessen = 20;
+boolean geslaagd = false;
+float procent;
+
+procent = alessen * 100 / 20;
+println(procent);
+if(procent >= 80 && cijfer >= 5.5){
+  println("Geslaagd!");
+}else{
+  println("Gezakt. :(");
+}
