@@ -1,0 +1,21 @@
+int i;
+
+void setup(){
+  size(200, 200);
+  Bos();
+}
+
+
+void tekenBoom(int x1) {
+  strokeWeight(5);
+  line((0 + x1), 200, (0 + x1), 125);
+  strokeWeight(0);
+  fill(0, 255, 0);
+  ellipse((0 + x1), 125, 50, 75);
+}
+
+void Bos(){
+    for(i = 190; i > 9; i-=20){
+            tekenBoom(i);
+          }
+}

@@ -1,0 +1,13 @@
+void setup(){
+  size(200, 200); 
+  tekenBoom(100, 200, 100, 125, 100, 125);
+}
+
+
+void tekenBoom(int x1, int y1, int x2, int y2, int x3, int y3) {
+  strokeWeight(5);
+  line(x1, y1, x2, y2);
+  strokeWeight(0);
+  fill(0, 255, 0);
+  ellipse(x3, y3, (x3 - 50), (y3 - 50));
+}
