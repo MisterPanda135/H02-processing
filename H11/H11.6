@@ -1,0 +1,12 @@
+int[] GetallenLijst = {1, 1, 1, 2, 4, 6, 8, 1, 7, 2, 19};
+int AantalGekozenGetal;
+int GekozenGetal = 1;
+void setup(){
+  for(int i = 0; i < GetallenLijst.length; i++){
+   if(GetallenLijst[i] == GekozenGetal){
+     AantalGekozenGetal++;
+   }
+     
+  }
+  println(AantalGekozenGetal);
+}
