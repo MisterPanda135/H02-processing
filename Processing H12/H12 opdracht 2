@@ -1,0 +1,30 @@
+
+
+void setup() {
+  size(400, 400);
+  Persoon persoon1 = new Persoon("Piet", 26 , "Man");
+  
+  persoon1.display();
+}
+
+
+class Persoon{
+  String Naam;
+  int Leeftijd;
+  String Geslacht;
+  
+  
+  Persoon(String Naam, int Leeftijd, String Geslacht){
+    this.Naam = Naam;
+    this.Leeftijd = Leeftijd;
+    this.Geslacht = Geslacht;
+    
+  }
+  
+  void display() {
+    println("Naam = " + Naam);
+    println("Leeftijd = " + Leeftijd);
+    println("Geslacht = " + Geslacht);
+    
+  }
+}
