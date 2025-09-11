@@ -1,0 +1,31 @@
+
+
+void setup() {
+  size(400, 400);
+  Rectangle rec = new Rectangle(200, 200 , 100, 100);
+  
+  rec.display();
+}
+
+
+class Rectangle{
+  float x;
+  float y;
+  float breedte;
+  float hoogte;
+  
+  
+  Rectangle(float x, float y, float breedte, float hoogte){
+    this.x = x;
+    this.y = y;
+    this.breedte = breedte;
+    this.hoogte = hoogte;
+    
+  }
+  
+  void display() {
+    rect(x, y, breedte, hoogte);
+    
+  }
+}
+
