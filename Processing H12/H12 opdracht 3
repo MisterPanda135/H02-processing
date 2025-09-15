@@ -1,0 +1,40 @@
+
+void setup() {
+  size(400, 400);
+  BankRekening bank1 = new BankRekening(1, 1000, "Piet");
+  
+  bank1.Withdraw(170);
+  bank1.Deposit(2570);
+}
+class BankRekening{
+  int BankNummer;
+  float BankSaldo;
+  String Eigenaar;
+  
+  BankRekening(int BankNummer, float BankSaldo, String Eigenaar){
+   this.BankNummer = BankNummer;
+   this.BankSaldo = BankSaldo;
+   this.Eigenaar = Eigenaar;
+  }
+  
+  void info() {
+   println("Bank Nummer: " + BankNummer); 
+   println("Bank Saldo: " + BankSaldo);
+   println("Naam eigenaar: " + Eigenaar);
+  }
+  
+  void Withdraw(int aantal){
+   if ((BankSaldo - aantal) < 0){
+    println("Je hebt niet genoeg geld. je hebt " + BankSaldo + "$"); 
+   }else {
+     BankSaldo = BankSaldo - aantal;
+     println("Je hebt " + aantal + "$ opgenomen je saldo is nu " + BankSaldo + "$");
+   }
+  }
+  
+  void Deposit(int aantal){
+    BankSaldo = BankSaldo + aantal;
+    println("Je hebt " + aantal + "$ op je bank gestort. Je saldo is nu " + BankSaldo + "$");
+  }
+  
+}
